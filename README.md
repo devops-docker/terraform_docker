@@ -5,5 +5,6 @@ This is a docker image to run Terraform without install terraform binary code.
 ## Usage
 you just need mount the plan file to the container and run terraform command.
 ```sh
+docker run --rm -v $(pwd):/tfplan terraform_docker plan
 docker run --rm -v $(pwd):/tfplan terraform_docker apply
 ```
